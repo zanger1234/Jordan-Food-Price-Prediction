@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 2</title>
+    <link rel = "stylesheet" href = "/static/style.css">
+  </head>
+
+  <body>
+    <div class="header">      
+      <p class = "logo"><img src = "/static/ORANGE_LOGO_rgb-black.jpg"></p>
+      </div>
+      
+      <div class = "csv_input">
+      <form method = "POST" enctype="multipart/form-data" action = "/">   
+          <input type="file" name="file" accept=".csv">
+          <input type = "submit" value="Upload"> 
+      </form>
+
+      <div class = "results">
+        <p> Model name: {{model_name}}</p>
+        <p> Model score: {{score}}</p>
+        <p> Accuracy score: {{accuracy}}</p>
+      </div>
+      
+      </div>
+
+      <br>
+      <div class = "plot">
+        <img src={{img_url}}>
+      </div>
+      <div class = "data_div">
+      <div class = "output">
+        {% for table in tables %}
+            {{ table|safe }}
+        {% endfor %}
+      </div>  
+    </div>  
+
+
+  </body>
+
+
+</html>
