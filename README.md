@@ -11,3 +11,5 @@ evaluated for accuracy. Feature selection techniques are
 applied to identify significant predictors. Evaluation
 scales designed for continuous data sets are used to
 evaluate model performance.
+
+Attached within the documentation folder is the full project documentation in pdf format along with a powerpoint presentation.
